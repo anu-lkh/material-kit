@@ -54,12 +54,12 @@ function SignInBasic() {
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "info",
+        // }}
         transparent
         light
       />
@@ -97,7 +97,7 @@ function SignInBasic() {
                 textAlign="center"
               >
                 <MKTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-                  Sign in
+                  Sign in to CareNav
                 </MKTypography>
                 <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
                   <Grid item xs={2}>
@@ -139,7 +139,16 @@ function SignInBasic() {
                   </MKBox>
                   <MKBox mt={4} mb={1}>
                     <MKButton variant="gradient" color="info" fullWidth>
-                      sign in
+                      <MKTypography
+                        component={Link}
+                        to="/pages/landing-pages/author"
+                        variant="button"
+                        color="white"
+                        fontWeight="medium"
+                        textGradient
+                      >
+                        Sign in
+                      </MKTypography>
                     </MKButton>
                   </MKBox>
                   <MKBox mt={3} mb={1} textAlign="center">
@@ -147,7 +156,7 @@ function SignInBasic() {
                       Don&apos;t have an account?{" "}
                       <MKTypography
                         component={Link}
-                        to="/authentication/sign-up/cover"
+                        to="/landing-pages/author"
                         variant="button"
                         color="info"
                         fontWeight="medium"

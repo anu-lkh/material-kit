@@ -21,11 +21,12 @@ import Icon from "@mui/material/Icon";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
-import MKButton from "components/MKButton";
+// import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
+import MKBadge from "components/MKBadge";
 
 // Images
-import profilePicture from "assets/images/bruce-mars.jpg";
+import profilePicture from "assets/images/ivana-squares.jpg";
 
 function Profile() {
   return (
@@ -38,21 +39,28 @@ function Profile() {
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">Michael Roven</MKTypography>
-                <MKButton variant="outlined" color="info" size="small">
+                <MKTypography variant="h3">Irina Doe</MKTypography>
+                {/* <MKButton variant="outlined" color="info" size="small">
                   Follow
-                </MKButton>
+                </MKButton> */}
               </MKBox>
               <Grid container spacing={3} mb={3}>
                 <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
+                  <MKBadge badgeContent="Mom" container />
+                  {/* <MKTypography component="span" variant="body2" fontWeight="bold">
                     323&nbsp;
                   </MKTypography>
                   <MKTypography component="span" variant="body2" color="text">
                     Posts
-                  </MKTypography>
+                  </MKTypography> */}
                 </Grid>
                 <Grid item>
+                  <MKBadge badgeContent="Consultant" container color="primary" />
+                </Grid>
+                <Grid item>
+                  <MKBadge badgeContent="Wife" container color="light" />
+                </Grid>
+                {/* <Grid item>
                   <MKTypography component="span" variant="body2" fontWeight="bold">
                     3.5k&nbsp;
                   </MKTypography>
@@ -67,7 +75,7 @@ function Profile() {
                   <MKTypography component="span" variant="body2" color="text">
                     Following
                   </MKTypography>
-                </Grid>
+                </Grid> */}
               </Grid>
               <MKTypography variant="body1" fontWeight="light" color="text">
                 Decisions: If you can&apos;t decide, the answer is no. If two equally difficult
